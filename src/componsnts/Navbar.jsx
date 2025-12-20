@@ -72,7 +72,7 @@ const Navbar = () => {
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.4 }}
                 >
-                    <nav className='pb-5'>
+                    <nav className='pb-5 bg-black/20'>
                         <Navigation onClick={closeMenu} />
                     </nav>
                 </motion.div>

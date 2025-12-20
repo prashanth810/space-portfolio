@@ -19,9 +19,9 @@ const Rig = () => {
 
 
 const Hero = () => {
-    const ismobile = useMediaQuery({ maxWidth: 853 })
+    const ismobile = useMediaQuery({ maxWidth: 762 })
     return (
-        <section className='flex items-center justify-center xl:justify-start lg:justify-start md:justify-start min-h-screen overflow-hidden'>
+        <section className='flex items-center justify-center xl:justify-start lg:justify-start md:justify-start min-h-screen overflow-hidden xl:px-16 lg:px-20 md:px-15 px-10'>
             <HeroText />
 
             <ParallaxBackground />

@@ -12,7 +12,7 @@ const HeroText = () => {
 
 
     return (
-        <section className='z-20 mt-20 text-center xl:mt-40 lg:mt-35 md:mt-30 xl:text-left lg:text-left md:text-left rounded-2xl bg-clip-text'>
+        <section className='z-20 text-center xl:mt-0 lg:mt-5 md:mt-10 xl:text-left lg:text-left md:text-left rounded-2xl bg-clip-text'>
             <div className='xl:flex lg:flex md:flex hidden flex-col items-start'>
                 <motion.h1 className='text-3xl font-medium'
                     variants={varients}
