@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Coading from '../../../public/assets/coding-pov.png';
 import Card from '../Card/Card';
 import { nextjs, redux, react } from '../../assets/icons/index.js'
+import Globe from '../globe/Globe.jsx';
+import EmailButton from '../resuable buttons/EmailButton.jsx';
+import Frameworks from '../frame works/Frameworks.jsx';
 
 const About = () => {
+    const containerRef = useRef();
     return (
         <section className='c-space section-spacing'>
             <h2 className='text-heading'> About Me </h2>
@@ -20,44 +24,89 @@ const About = () => {
                     <div className='absolute inset-x-0 pointer-events-none -bottom-4 xl:h-1/2 lg:h-1/2 md:h-1/2 h-1/3 bg-gradient-to-t from-indigo ' />
                 </div>
 
-                <div className='grid-default-color grid-2'>
+                <div className='grid-default-color grid-2'
+                    ref={containerRef}>
                     <div className='flex items-center justify-center w-full h-full'>
                         <p className='flex items-end text-4xl text-gray-500'>  CODE IS CRAFT  </p>
                         <Card
                             style={{ rotate: "75deg", top: "30%", left: "20%" }}
-                            text={"React Js"} />
+                            text={"React Js"}
+                            containerRef={containerRef}
+                        />
                         <Card
-                            style={{ rotate: "-30deg", top: "60%", left: "450%" }} text={"Javascript"} />
+                            style={{ rotate: "-30deg", top: "60%", left: "450%" }} text={"Javascript"}
+                            containerRef={containerRef}
+                        />
 
                         <Card
-                            style={{ rotate: "90deg", top: "30%", left: "70%" }} text={"Node Js"} />
+                            style={{ rotate: "90deg", top: "30%", left: "70%" }} text={"Node Js"}
+                            containerRef={containerRef}
+                        />
 
                         <Card
-                            style={{ rotate: "-450deg", top: "55%", left: "0%" }} text={"Express Js"} />
+                            style={{ rotate: "-450deg", top: "55%", left: "0%" }} text={"Express Js"}
+                            containerRef={containerRef}
+                        />
 
                         <Card
-                            style={{ rotate: "20deg", top: "10%", left: "38%" }} text={"Mongodb"} />
+                            style={{ rotate: "20deg", top: "10%", left: "38%" }} text={"Mongodb"}
+                            containerRef={containerRef}
+                        />
 
                         <Card
-                            style={{ rotate: "160deg", top: "30%", left: "5%" }} text={"React Native"} />
+                            style={{ rotate: "160deg", top: "30%", left: "5%" }} text={"React Native"}
+                            containerRef={containerRef}
+                        />
 
                         <Card
-                            style={{ rotate: "110deg", top: "48%", left: "35%" }} text={"Three Js"} />
+                            style={{ rotate: "110deg", top: "48%", left: "35%" }} text={"Three Js"}
+                            containerRef={containerRef}
+                        />
 
                         <Card
-                            style={{ rotate: "-45deg", top: "35%", left: "65%" }} image={nextjs} />
+                            style={{ rotate: "-45deg", top: "35%", left: "65%" }} image={nextjs}
+                            containerRef={containerRef}
+                        />
 
                         <Card
-                            style={{ rotate: "25deg", top: "70%", left: "55%" }} image={redux} />
+                            style={{ rotate: "25deg", top: "70%", left: "55%" }} image={redux}
+                            containerRef={containerRef}
+                        />
 
                         <Card
-                            style={{ rotate: "25deg", top: "5%", left: "10%" }} image={react} />
+                            style={{ rotate: "25deg", top: "5%", left: "10%" }} image={react}
+                            containerRef={containerRef}
+                        />
                     </div>
                 </div>
-                <div className='grid-black-color grid-3'></div>
-                <div className='grid-special-color grid-4'></div>
-                <div className='grid-default-color grid-5'></div>
-                <div className='grid-default-color grid-6'></div>
+                {/* grid - 3 */}
+                <div className='grid-black-color grid-3'>
+                    <div className='z-10 w-[50%]'>
+                        <p className='headtext'> Time Zone  </p>
+                        <p className='subtext'> I' based in Mars, and open to remove work worldwise.  </p>
+                    </div>
+
+                    <figure className='absolute left-[30%] top-[10%]'>
+                        <Globe />
+                    </figure>
+                </div>
+
+                {/* grid-4  */}
+                <div className='grid-special-color grid-4'>
+                    <div className='flex flex-col items-center justify-center mx-auto w-full gap-3'>
+                        <p className='text-center headtext'> Do you want to start a project together? </p>
+                        <EmailButton />
+                    </div>
+                </div>
+                <div className='grid-default-color grid-5'>
+                    <div className='z-10 w-[50%]'>
+                        <p className='headtext'> Teck Stack </p>
+                        <p className='subtext'> I Specialize in a variety of languages, framewrks, and tools that allow me to build robust and Scalable applications.  </p>
+                    </div>
+                    <div className='absolute inset-y-0 xl:inset-y-9 w-full h-full start-[50%] xl:scale-125'>
+                        <Frameworks />
+                    </div>
+                </div>
             </div>
         </section>
     )
