@@ -24,8 +24,7 @@ export const FlipWords = ({ words, duration = 3000, className }) => {
     <AnimatePresence
       onExitComplete={() => {
         setIsAnimating(false);
-      }}
-    >
+      }} >
       <motion.div
         initial={{
           opacity: 0,
