@@ -26,6 +26,35 @@ import {
 } from "../../assets/icons";
 
 
+
+
+
+export const Testimonials = [
+    {
+        name: "Rohit Sharma",
+        designation: "Project Manager, Novatales Media",
+        quote:
+            "Prashanth is a dedicated developer who consistently delivered clean and scalable React components. He understands requirements quickly and converts ideas into working features with great attention to detail.",
+        src: novatalesmedia,
+    },
+    {
+        name: "Ananya Verma",
+        designation: "Senior Software Engineer, BlueCs Limited",
+        quote:
+            "Working with Prashanth was smooth and productive. He has strong knowledge of React and React Native and always focuses on writing maintainable and user-friendly code.",
+        src: novatalesmedia,
+    },
+    {
+        name: "Karthik Reddy",
+        designation: "Product Lead",
+        quote:
+            "Prashanth played an important role in building our admin panel and improving overall performance. His problem-solving skills and willingness to learn made a real impact on the project.",
+        src: novatalesmedia,
+    },
+];
+
+
+
 export const skills = [
     {
         imageUrl: react,
@@ -115,40 +144,42 @@ export const experiences = [
         company_name: "Novatales Media",
         icon: novatalesmedia,
         iconBg: "#f5ca5d",
-        date: "January 2024 - July - 2024",
+        date: "2024 - 2024",
         points: [
-            "Developed a client website with features like login and logout, API integration, Razorpay payments, product tracking, and support for all devices.",
-            "Created an admin and user role-based system, where admins manage pages and users access features securely.",
-            "Built responsive web applications using React.js, HTML, CSS, Bootstrap, JavaScript, and JSX."
+            "Developed responsive client-facing web applications using React.js, HTML, CSS, Bootstrap, and JavaScript.",
+            "Integrated REST APIs for authentication, dashboards, and dynamic content rendering.",
+            "Implemented login and logout functionality with role-based access control.",
+            "Collaborated with designers and backend developers to improve UI/UX and application performance."
         ],
     },
-    // {
-    //     title: "React Native Developer",
-    //     company_name: "Tesla",
-    //     icon: bluecs,
-    //     iconBg: "#fbc3bc",
-    //     date: "Jan 2021 - Feb 2022",
-    //     points: [
-    //         "Developing and maintaining web applications using React.js and other related technologies.",
-    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //         "Implementing responsive design and ensuring cross-browser compatibility.",
-    //         "Participating in code reviews and providing constructive feedback to other developers.",
-    //     ],
-    // },
+    {
+        title: "React Native Developer",
+        company_name: "BlueCs Limited",
+        icon: bluecs, // ✅ use your existing icon
+        iconBg: "#6b8cff",
+        date: "2024 - 2025",
+        points: [
+            "Developed cross-platform mobile applications using React Native for Android devices.",
+            "Implemented reusable components, navigation flows, and form validations.",
+            "Integrated REST APIs to fetch and display real-time data inside the mobile app.",
+            "Focused on performance optimization, responsive layouts, and smooth user experience."
+        ],
+    },
     {
         title: "React js Developer",
         company_name: "BlueCs Limited",
         icon: blueera,
         iconBg: "#1fb0ff",
-        date: "January 2025 - Present",
+        date: "2025 - Present",
         points: [
-            "Developed a professional admin panel for employees and admins to manage attendance, leaves, holidays, and reports.",
-            "Integrated AI-based APIs to reduce manual work and provide more useful features for users and business teams.",
-            "Implemented role-based authentication to control access for employees and admins. Employees can apply for leave, and admins can approve requests easily.",
-            " Holidays are shown in a calendar for better planning. The application is user-friendly, responsive, and easy to use."
+            "Built and maintained a scalable admin panel for managing employees, attendance, leaves, and reports.",
+            "Integrated AI-based APIs to automate workflows and reduce manual work.",
+            "Implemented secure role-based authentication for employees and administrators.",
+            "Designed responsive, clean, and user-friendly interfaces for web platforms."
         ],
     },
 ];
+
 
 export const socialLinks = [
     {
