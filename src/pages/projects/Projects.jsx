@@ -17,10 +17,10 @@ const Projects = () => {
     }
 
     return (
-        <section className='relative c-space section-spacing' onMouseMove={ahndlemousemove}>
-            <h2 className="text=heading"> My Projects </h2>
+        <section className='relative c-space mt-24' onMouseMove={ahndlemousemove} id='projects'>
+            <h2 className="text-heading"> My Projects </h2>
 
-            <div className='bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-10 h-[1px] w-full' />
+            <div className='bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-10 h-[1px] w-full mb-6' />
 
             {projects.map((project, i) => {
                 return (

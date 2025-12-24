@@ -27,6 +27,7 @@ import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import bootstrap from './bootstrap.png'
+import threejs from '../../../public/assets/logos/threejs.svg'
 
 export {
     css,
@@ -57,5 +58,6 @@ export {
     contact,
     soundon,
     soundoff,
-    bootstrap
+    bootstrap,
+    threejs
 }

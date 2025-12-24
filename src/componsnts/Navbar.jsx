@@ -9,16 +9,16 @@ const Navigation = ({ onClick }) => {
     return (
         <ul className='nav-ul'>
             <li className='nav-li'>
-                <Link to='/' className='nav-link' onClick={onClick}>Home</Link>
+                <a href='#' className='nav-link' onClick={onClick}>Home</a>
             </li>
             <li className='nav-li'>
-                <Link to='/about' className='nav-link' onClick={onClick}>About</Link>
+                <a href='#about' className='nav-link' onClick={onClick}>About</a>
             </li>
             <li className='nav-li'>
-                <Link to='/projects' className='nav-link' onClick={onClick}>Projects</Link>
+                <a href='#projects' className='nav-link' onClick={onClick}>Projects</a>
             </li>
             <li className='nav-li'>
-                <Link to='/contact' className='nav-link' onClick={onClick}>Contact</Link>
+                <a href='#contact' className='nav-link' onClick={onClick}>Contact</a>
             </li>
         </ul>
     );

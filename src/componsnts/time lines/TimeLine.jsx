@@ -24,12 +24,12 @@ const TimeLine = ({
     const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
     return (
-        <div className="c-space section-spacing"
+        <div className="c-space "
             ref={containerRef}>
-            <h2> My Work Exe-perience </h2>
+            <h2 className="headtext"> My Work Exe-perience </h2>
             <div ref={ref} className="relative pb-20">
                 {data.map((item, index) => (
-                    <div key={index} className="flex justify-start pt-10 md:pt-40 md:gap-10">
+                    <div key={index} className="flex justify-start pt-10 xl:pt-20 lg:pt-16 md:pt-12 md:gap-10">
                         <div
                             className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
                             <div

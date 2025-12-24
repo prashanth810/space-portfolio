@@ -60,7 +60,7 @@ const Contact = () => {
     };
 
     return (
-        <section className='relative flex items-center c-space section-spacing'>
+        <section className='relative flex items-center c-space section-spacing' id='contact'>
             <div className='flex flex-col items-center justify-center max-w-lg p-5 mx-auto border border-white/10 rounded-xl bg-primary'>
                 <div className='flex flex-col items-start w-full gap-5 mb-10'>
                     <h2 className='text-heading'> Let's Talk </h2>

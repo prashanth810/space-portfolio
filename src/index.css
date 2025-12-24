@@ -68,7 +68,7 @@ body {
 }
 
 .section-spacing {
-    @apply min-h-screen mt-20 md:mt-30;
+    @apply min-h-screen xl:mt-20 lg:mt16 md:mt-12 mt-8;
 }
 
 .text-heading {
@@ -145,4 +145,9 @@ body {
 
 .field-input-focus {
     @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20;
+}
+
+
+html {
+    scroll-behavior: smooth;
 }

@@ -5,7 +5,7 @@ import { experiences } from '../../componsnts/constants/Myskills'
 const Experience = () => {
     return (
         <section>
-            <div className='w-full'>
+            <div className='w-full mt-28'>
                 <TimeLine data={experiences} />
             </div>
         </section>

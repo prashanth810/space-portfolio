@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import Coading from '../../../public/assets/coding-pov.png';
 import Card from '../Card/Card';
-import { nextjs, redux, react } from '../../assets/icons/index.js'
+import { css, express, git, github, html, javascript, mongodb, motion, mui, nextjs, nodejs, react, redux, tailwindcss, reactnative, bootstrap, threejs } from '../../assets/icons/index.js'
 import Globe from '../globe/Globe.jsx';
 import EmailButton from '../resuable buttons/EmailButton.jsx';
 import Frameworks from '../frame works/Frameworks.jsx';
@@ -9,7 +9,7 @@ import Frameworks from '../frame works/Frameworks.jsx';
 const About = () => {
     const containerRef = useRef();
     return (
-        <section className='c-space section-spacing'>
+        <section className='c-space section-spacing' id='about'>
             <h2 className='text-heading'> About Me </h2>
 
             <div className='grid xl:grid-cols-6 lg:grid-cols-6 md:grid-cols-3 xl:auto-rows-[18rem] grid-cols-1 gap-3 mt-12'>
@@ -34,22 +34,37 @@ const About = () => {
                             containerRef={containerRef}
                         />
                         <Card
-                            style={{ rotate: "-30deg", top: "60%", left: "450%" }} text={"Javascript"}
+                            style={{ rotate: "-30deg", top: "80%", left: "450%" }} image={javascript}
                             containerRef={containerRef}
                         />
 
                         <Card
-                            style={{ rotate: "90deg", top: "30%", left: "70%" }} text={"Node Js"}
+                            style={{ rotate: "90deg", top: "30%", left: "70%" }} image={nodejs}
                             containerRef={containerRef}
                         />
 
                         <Card
-                            style={{ rotate: "-450deg", top: "55%", left: "0%" }} text={"Express Js"}
+                            style={{ rotate: "-450deg", top: "55%", left: "0%" }} image={express}
                             containerRef={containerRef}
                         />
 
                         <Card
-                            style={{ rotate: "20deg", top: "10%", left: "38%" }} text={"Mongodb"}
+                            style={{ rotate: "20deg", top: "10%", left: "38%" }} image={mongodb}
+                            containerRef={containerRef}
+                        />
+
+                        <Card
+                            style={{ rotate: "33deg", top: "26%", left: "48%" }} image={tailwindcss}
+                            containerRef={containerRef}
+                        />
+
+                        <Card
+                            style={{ rotate: "28deg", top: "34%", left: "85%" }} image={github}
+                            containerRef={containerRef}
+                        />
+
+                        <Card
+                            style={{ rotate: "53deg", top: "76%", left: "68%" }} image={css}
                             containerRef={containerRef}
                         />
 
@@ -59,7 +74,7 @@ const About = () => {
                         />
 
                         <Card
-                            style={{ rotate: "110deg", top: "48%", left: "35%" }} text={"Three Js"}
+                            style={{ rotate: "110deg", top: "48%", left: "35%" }} image={threejs}
                             containerRef={containerRef}
                         />
 
@@ -79,6 +94,7 @@ const About = () => {
                         />
                     </div>
                 </div>
+
                 {/* grid - 3 */}
                 <div className='grid-black-color grid-3'>
                     <div className='z-10 w-[50%]'>
@@ -98,9 +114,9 @@ const About = () => {
                         <EmailButton />
                     </div>
                 </div>
-                <div className='grid-default-color grid-5'>
-                    <div className='z-10 w-[50%]'>
-                        <p className='headtext'> Teck Stack </p>
+                <div className='grid-default-color grid-5 '>
+                    <div className='z-10 xl:w-[50%] lg:w-[50%] md:w-[50%] w-full'>
+                        <p className='headtext'> Tech Stack </p>
                         <p className='subtext'> I Specialize in a variety of languages, framewrks, and tools that allow me to build robust and Scalable applications.  </p>
                     </div>
                     <div className='absolute inset-y-0 xl:inset-y-9 w-full h-full start-[50%] xl:scale-125'>
