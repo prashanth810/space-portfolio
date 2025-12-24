@@ -68,7 +68,7 @@ body {
 }
 
 .section-spacing {
-    @apply min-h-screen xl:mt-20 lg:mt16 md:mt-12 mt-8;
+    @apply min-h-screen xl:mt-20 lg:mt-16 md:mt-12 mt-8;
 }
 
 .text-heading {
